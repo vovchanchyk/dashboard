@@ -1,0 +1,14 @@
+@mixin fonts($fs,$fw, $col) {
+    font-family: 'Segoe UI';
+    font-size: $fs;
+    font-weight: $fw;
+    color: $col;   
+}
+@mixin flex($fd,$jc,$ai){
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}
+ $font1:#3f4350;
+ $font2:#424242;

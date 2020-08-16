@@ -1,0 +1,392 @@
+@import "./src/zero.scss";
+@import "./src/mixins.scss";
+
+.header {
+  margin: auto;
+   padding: 0 85px;
+   max-width: 1360px;
+  width: 100%;
+  min-width: 960px;
+   height: 73px;
+   background-image: url(./img/BG.png);
+   @include flex(row, space-between, center);
+ 
+   &__logo {
+     width: 167px;
+     height: 26px;
+   }
+ 
+   &__menu {
+     width: 353px;
+     @include flex(row, space-between, center);
+   }
+   &__link {
+     @include fonts(1em, 400, #fff);
+   }
+   &__user {
+     @include flex(row, space-between, center);
+   }
+   &__avatar {
+     width: 37px;
+     height: 37px;
+   }
+   &__title {
+     @include fonts(1em, 400, #fff);
+     margin-left: 9px;
+   }
+ }
+
+.body {
+  margin: auto;
+  display: flex;
+  max-width: 1360px;
+  width: 100%;
+  min-width: 960px;
+  background-color: rgb(246, 252, 251);
+
+
+  &__sidebar {
+  }
+
+  &__column {
+   
+    
+    margin: 28px 28px;
+    width: 350px;
+    height: auto;
+  }
+
+  &__content {
+    
+     width: 100%;
+    box-sizing: border-box;
+    // border: 0.1px solid black;
+  }
+  &__row{
+    // width: 100%;
+    padding-right: 28px;
+    background-color: #fff;
+    margin: 28px 30px;
+      
+  }
+}
+.footer {
+  margin: auto;
+  max-width: 1360px;
+  width: 100%;
+  min-width: 960px;
+  height: 70px;
+  @include flex(row, space-between, center);
+  padding: 0px 105px;
+  background-image: url(./img/_footer.png);
+    &__logo {
+      width: 167px;
+      height: 26px;
+    }
+  
+    &__copuright {
+      @include fonts(1em, 400, #fff);
+    }
+  }
+
+.administrator {
+  background-color: #fff;
+  height: auto;
+  padding: 15px 14px 27px 14px;
+
+  &__item {
+    display: flex;
+  }
+
+  &__avatar {
+    width: 92px;
+    height: 92px;
+
+    margin-left: 15px;
+    vertical-align: middle;
+  }
+
+  &__description {
+    margin-left: 15px;
+  }
+
+  &__title {
+    padding: 15px 0 0 0;
+    @include fonts(1.286em, 600, #424242);
+  }
+
+  &__subtitle {
+    margin-top: 7px;
+    @include fonts(1em, 600, #7e7ab6);
+  }
+
+  &__btn {
+    margin-top: 15px;
+    background: transparent;
+    @include fonts(1em, 300, #7e7ab6);
+    &::before {
+      content: url(./img/Icon_out.png);
+      vertical-align: middle;
+      padding-right: 5px;
+    }
+  }
+
+  &__line {
+    display: block;
+    width: 90%;
+    margin: 9px auto 0px;
+  }
+
+  &__options {
+    width: 318px;
+    min-height: 207px;
+     margin-top: 20px;
+  }
+
+  &__option {
+    @include fonts(1em, 600, white);
+    @include flex(row, center, center);
+    height: 37px;
+    border-radius: 19px;
+  }
+
+  &__option-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 24px;
+  }
+}
+.option-play {
+  width: 297px;
+  background-color: #5cb85c;
+
+  &__img {
+  }
+
+  &__text {
+    padding-left: 5px;
+  }
+}
+.option-edit {
+  width: 123px;
+  background-color: #7e7ab6;
+
+  &__img {
+  }
+
+  &__text {
+    padding-left: 5px;
+  }
+}
+.option-key {
+  width: 183px;
+  background-color: #7e7ab6;
+
+  &__img {
+  }
+
+  &__text {
+    padding-left: 5px;
+  }
+}
+.option-settings {
+  width: 206px;
+  margin-top: 11px;
+  background-color: #7e7ab6;
+
+
+  &__img {
+  }
+
+  &__text {
+    padding-left: 5px;
+  }
+}
+.option-support {
+  width: 119px;
+  background-color: #3f4350;
+  margin-top: 24px;
+
+  &__img {
+  }
+
+  &__text {
+    padding-left: 5px;
+  }
+}
+
+.students {
+  background-color: #fff;
+  padding: 26px 15px 28px;
+
+  &__title {
+    @include fonts(2em, 400, $font1);
+    margin: 0px 15px 26px;
+  }
+
+  &__line {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+
+  &__item {
+    @include flex(row, flex-start, center);
+    height: 92px;
+  }
+
+  &__item-avatar {
+    width: 55px;
+    height: 55px;
+  }
+
+  &__item-description {
+    margin-left: 15px;
+  }
+
+  &__item-title {
+    @include fonts(1.23em, 400, $font2);
+  }
+
+  &__item-subtitle {
+    @include fonts(1em, 400, $font1);
+  }
+
+  &__item-btn {
+    margin-top: 11px;
+	background: transparent;
+	@include fonts(1em, 300, #7e7ab6);
+    &::before {
+      content: url(./img/_eye.png);
+      vertical-align: middle;
+      padding-right: 5px;
+    }
+  }
+}
+
+.user {
+  width: 100%;
+  
+  &__head {
+    @include flex(row, flex-start, center);
+    position: relative;
+    height: 73px;
+    width: 100%;
+    
+    
+  }
+
+  &__avatar {
+    margin-left: 14px;
+    height: 55px;
+    width: 55px;
+  }
+
+  &__title {
+    @include fonts(1.7em, 400, $font1);
+    margin-left: 14px;
+  }
+
+  &__arrow {
+    position: absolute;
+    right: 0px;
+  }
+
+  &__body {
+  }
+
+  &__list {
+      margin-top: 9px;
+      padding: 9px 0;
+      border-top: 1px solid #d6ff;
+
+  }
+
+  &__list-head {
+    @include flex(row, flex-start, center);
+    height: 64px;
+    position: relative;
+  }
+
+  &__list-icon {
+    size: 19px 24px;
+    margin-left: 14px;
+  }
+
+  &__list-title {
+    @include fonts(1em, 600, $font2);
+    margin-left: 18px;
+  }
+
+  &__list-arrow {
+    position: absolute;
+    right: 0px;
+  }
+
+  &__list-body {
+      
+  }
+
+  &__sublist {
+  }
+
+  &__sublist-head {
+    @include flex(row, flex-start, center);
+    height: 56px;
+    position: relative;
+  }
+
+  &__sublist-avatar {
+    margin-left: 66px;
+    width: 34px;
+    height: 31px;
+    padding-top: 4px;
+    border: solid red 2px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    @include fonts(1.14, 400, 55044);
+  }
+
+  &__sublist-title {
+    margin-left: 14px;
+    @include fonts(1em, 600, $font2);
+  }
+
+  &__sublist-arrow {
+    position: absolute;
+    right: 0;
+  }
+
+  &__progress {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: wrap;
+	height: 194px;
+	margin: 0px 0px 0px 57px;
+  }
+
+  &__progress-item {
+    @include fonts(1em, 400, $font1);
+    line-height: 31px;
+    :before {
+      content: url(./img/2arrow.png);
+      padding-right: 17px;
+    }
+  }
+
+  &__progress-count {
+    @include fonts(1em, 700, #5cd85c);
+  }
+}
+
+.arrow {
+}
+.active{
+    transform: rotate(180deg);
+}
+.close{
+    display: none;
+}
